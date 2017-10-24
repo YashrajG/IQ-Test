@@ -1,0 +1,92 @@
+<HTML>
+	<HEAD>
+		<TITLE>Contact Page</TITLE>
+		<style>
+			body{
+				background-image: url("background.jpg");
+			}
+			
+			.button {
+			  display: inline-block;
+			  border-radius: 50%;
+			  background-color: #FFFFFF;
+			  border: 1px solid #000000;
+			  color: #000000;
+			  text-align: center;
+			  font-size: 28px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  
+			}
+	
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.4s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			#BOX{
+				padding: 10px;
+				background-color:#4dbbff;
+				color: #FFFFFF;
+				width: 500px;
+				height: 360px;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 40px;
+				filter: alpha(opacity=60);
+				font-family: Arial, Helvetica, "Comic Sans MS", sans-seif;
+			}
+		</style>
+	</HEAD>
+	<BODY>
+		<DIV ID=BOX>
+			<H2 align="center">Contact Us</H2>
+			<table align="center" cellpadding="13px" style="color: #FFFFFF; font-size: px;">
+				<tr>
+					<th><img src="ironsil.png" alt="Yashraj Gangal" height="42px" width="42px"></th>
+					<th><img src="batsil.jpg" alt="Aditya Gala" height="42px" width="42px"></th>
+				</tr>
+				<tr>
+					<td align="center">Yashraj Gangal</td>
+					<td align="center">Aditya Gala</td>
+				</tr>
+				<tr>
+					<td>yashraj.gangal@gmail.com</td>
+					<td>adityagala223@gmail.com</td>
+				</tr>
+				<tr>
+					<td align="center">Developer</td>
+					<td align="center">Developer</td>
+				</tr>
+			</table><BR>
+			<table align="center" cellpadding="13px" style="color: #FFFFFF; font-size: 10px;">
+				<tr>
+					<th>Disclaimer:</th>
+					<td>This IQ test is not a substitute for the real IQ Test conducted by a professional psychologist.</td>
+				</tr>
+			 </table>
+		</DIV>
+	</BODY>
+</HTML>

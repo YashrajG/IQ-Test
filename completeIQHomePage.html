@@ -1,0 +1,85 @@
+<HTML>
+	<HEAD>
+		<TITLE>IQ Test</TITLE>
+		<style>
+			body{
+				background-image: url("background.jpg");
+			}
+			
+			.button {
+			  display: inline-block;
+			  border-radius: 50%;
+			  background-color: #FFFFFF;
+			  border: 1px solid #000000;
+			  color: #000000;
+			  text-align: center;
+			  font-size: 28px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  
+			}
+	
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.4s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			#RULES{
+				padding: 10px;
+				background-color:#4dbbff;
+				color: #FFFFFF;
+				width: 500px;
+				height: 350px;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 40px;
+				filter: alpha(opacity=60);
+				font-family: Arial, Helvetica, "Comic Sans MS", sans-seif;
+			}
+		</style>
+		
+		<SCRIPT SRC="quizNav.js"></SCRIPT>
+		
+	</HEAD>
+	<BODY>
+		<DIV ID=RULES>
+			<H1 style="text-align:center;">COMPLETE IQ TEST</H1>
+			<BR>
+			<UL>
+				<LI>This IQ Test has 20 questions.<BR></LI>
+				<LI>The test will include multiple choice questionsand input type questions.<BR></LI>
+				<LI>All questions are compulsory.<BR></LI>
+				<LI>The multipe choice questions must have an integer type input.<BR></LI>
+				<LI>No Leading or Trailing space should be present in the answer.<BR></LI>
+			</UL>
+			<H2 style="text-align:center;">
+				<button class="button" style="vertical-align:middle" ONCLICK="window.location.href='http://localhost/QUIZ/CompleteQuestion.php?closedAnswer=5'">
+					<span>IQ Test </span>
+				</button>
+			</H2>
+		</DIV>
+		
+	</BODY>
+</HTML>
